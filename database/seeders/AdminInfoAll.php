@@ -22,7 +22,7 @@ class AdminInfoAll extends Seeder
         DB::table('admin_all_infos')->insert([
             //User Starting
             'name'=>'admin',
-            'email'=>Str::random().'@gmail.com',
+            'email'=>'adminmetrosolver@gmail.com',
             'phone'=>'+44 4567567654',
             'address'=>'United Kingdom',
             'dateofbirth'=>  Carbon::create('2000', '01', '01'),

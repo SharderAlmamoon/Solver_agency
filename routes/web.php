@@ -33,6 +33,8 @@ Route::middleware('auth')->group(function () {
  // For Admin All Start
 
 Route::controller(AdminAllController::class)->group(function (){
+   Route::get('/admin/login','AdminLogin')->name('admin.login');
+   Route::POST('/admin/insert','AdminInsert')->name('admin.insert');
    Route::get('/admin/dashboard','Dashboard')->name('admin.dashboard');
 });
 
